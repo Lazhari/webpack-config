@@ -1,10 +1,11 @@
 const angular = require('angular');
-
+const {
+    __HOST,
+    __URL
+} = require('./config');
 (function () {
     angular.module('app')
-        .factory('ContactStore', function ($http, $q) {
-            const __HOST = 'https://mini-crm-api.herokuapp.com';
-            const __URL = '/api/v1/contacts';
+        .factory('ContactStore', function ($http) {
             return {
                 getContacts,
                 getContact,
