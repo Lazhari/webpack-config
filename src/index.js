@@ -1,9 +1,5 @@
-const hello = "Hello World";
+const angular = require('angular');
 
-class Config {
-    constructor() {
+const app = angular.module('app', []);
 
-    }
-}
-
-console.log(hello);
+require('./app/lab.ctrl');

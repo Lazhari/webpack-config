@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "serve --open",
-    "build": "webpack -w",
+    "start": "node ./server.js",
+    "build:dev": "webpack -w",
+    "build:prod": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,5 +17,10 @@
     "babel-preset-es2015": "6.24.1",
     "serve": "6.4.4",
     "webpack": "3.10.0"
+  },
+  "dependencies": {
+    "angular": "1.6.8",
+    "axios": "0.17.1",
+    "express": "4.16.2"
   }
 }
